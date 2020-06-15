@@ -1,5 +1,5 @@
 # Contactless_Covid_Tester_Web_App
-![](https://img.mlo-online.com/files/base/ebm/mlo/image/2020/03/Pixabay_covid_4948866_1280.5e820254658c4.png?auto=format&w=720)
+![](https://assets.entrepreneur.com/content/3x2/2000/20200331145028-coronavirus-4967489-1920.jpeg?width=1000)
 
 ### Inspiration
 COVIID-19, the most exasperating topic spoken all across the Globe. We are all aware of this virus and its consequences. People get afraid due to the symptoms of COVID-19 and crowd at the hospitals which is currently very difficult for the frontline workers to manage and take tests for all. It is very important to know who actually needs to be tested. Hence people who are at a higher risk are only needed to be targeted.
