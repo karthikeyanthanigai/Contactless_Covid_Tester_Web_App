@@ -1,0 +1,91 @@
+.center-div {
+    margin: 0 auto;
+    max-width: 800px;
+    height: 500px;
+    border-radius: 3px;
+}
+
+body {
+    text-decoration: none;
+}
+
+p {
+    text-align: left;
+    text-indent: 40px;
+    font-size: 130%;
+    background-color: none;
+}
+
+form {
+    text-align: left;
+    align-self: start;
+}
+
+
+/* Split the screen in half */
+
+.split {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 10px;
+    text-decoration-color: none;
+}
+
+
+/* Control the left side */
+
+.left {
+    left: 0;
+    text-decoration-color: none;
+    background-size: 1100px;
+    margin-top: 47px;
+    width: 44%;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/* Control the right side */
+
+.right {
+    right: 0;
+    background-size: 1800px;
+    margin-top: 47px;
+    width: 56%;
+    text-align: center;
+}
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+
+
+/* If you want the content centered horizontally and vertically */
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* Style the image inside the centered container, if needed */
+
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}

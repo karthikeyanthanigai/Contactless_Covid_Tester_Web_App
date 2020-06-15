@@ -1,0 +1,51 @@
+body {
+    font-family: Arial;
+    color: black;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    top: 50;
+    bottom: 0;
+    background-image: url("diet1.jpg");
+    background-size: 1000px;
+}
+
+.right {
+    right: 0;
+    top: 50;
+    bottom: 0;
+    background-image: url("diet2.jpg");
+    background-size: 1050px;
+    opacity: 1;
+}
+
+.centered {
+    position: absolute;
+    top: 55%;
+    left: 56.5%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+}
+
+.centered img {
+    width: 125px;
+    border-radius: 0%;
+    opacity: 1;
+}
+
+mark {
+    background-color: black;
+    color: white;
+}

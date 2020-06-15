@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="topnav">
+    <a class="active" href="{{url_for('home')}}">Home</a>
+
+
+    <li style="float:right" ><a href="{{url_for('blogin')}}">Login</a></li>
+    <li style="float:right"><a href="{{url_for('bsign')}}">Sign Up</a>
+
+</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contactless tester!! </title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type='text/css' href="{{url_for('static',filename='login.css')}}">
+</head>
+
+<body>
+
+    <section class="wrapper">
+        <div id="stars"></div>
+
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        </div>
+    </section>
+
+</body>
+<body>
+
+    <div class="container">
+        <img src="{{url_for('static', filename='1.jpg')}}" width="1000" height="300">
+
+
+    </div>
+
+</body>
+
+<head>
+    <link rel="stylesheet" type='text/css' href="{{url_for('static',filename='login.css')}}">
+</head>
+<body>
+    <div class="login-box">
+        <img src="{{url_for('static', filename='avatar.png')}}" class="avatar">
+        <h1>Doctor Login</h1>
+        <form action="{{ url_for('hellod') }}" method="post">
+            <p>Email</p>
+            <input type="text" name="email" placeholder="Enter email-id">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password">
+
+            <button>Login</button>
+            <a href="{{url_for('dsign')}}">New User? SIGN-UP</a>
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>

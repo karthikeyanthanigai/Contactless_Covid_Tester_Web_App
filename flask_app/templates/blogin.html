@@ -1,0 +1,120 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<html lang="en">
+<div class="topnav">
+    <a class="active" href="{{url_for('home')}}">Home</a>
+
+
+    <li style="float:right" ><a href="{{url_for('blogin')}}">Login</a></li>
+    <li style="float:right"><a href="{{url_for('bsign')}}">Sign Up</a>
+
+</div>
+<head>
+</head>
+<style >
+  body {
+      font-family: Arial;
+      color: black;
+  }
+
+  .split {
+      height: 100%;
+      width: 50%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+  }
+
+  .left {
+      left: 0;
+      top: 50;
+      bottom: 0;
+
+    background-image: url("doc.jpg");
+      background-size: 1000px;
+  }
+
+  .right {
+      right: 0;
+      top: 50;
+      bottom: 0;
+      background-image: url("patient.jpg");
+      background-size: 880px;
+      opacity: 1;
+  }
+
+  .centered {
+      position: absolute;
+      top: 55%;
+      left: 56.5%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: 30px;
+      color:white;
+      opacity: 1;
+  }
+  p{
+    font-size:20px;
+  }
+
+  .centered img {
+widht:550px;
+height:300px;
+
+      opacity: 1;
+  }
+  </style>
+<body>
+
+    <div class="split left">
+        <div class="centered">
+            <a href="{{url_for('dlogin')}}"><img src="{{url_for('static', filename='doctor.png')}}"></a>
+            <h2>DOCTOR</h2>
+            <p>TO LOGIN AS DOCTOR.</p>
+        </div>
+    </div>
+
+    <div class="split right">
+        <div class="centered">
+            <a href="{{url_for('plogin')}}"> <img src="{{url_for('static', filename='patient.png')}}"></a>
+            <h2>PATIENT</h2>
+            <p>TO LOGIN AS PATIENT.</p>
+        </div>
+    </div>
+</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOGIN</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type='text/css' href="{{url_for('static',filename='login.css')}}">
+
+</head>
+
+<body>
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        </div>
+    </section>
+</body>
+
+<body>
+    <div class="container">
+        <img src="{{url_for('static', filename='1.jpg')}}" width="1000" height="300">
+    </div>
+
+</body>
+
+<head>
+    <link rel="stylesheet" type='text/css' href="{{url_for('static',filename='login.css')}}">
+</head>
+
+</html>

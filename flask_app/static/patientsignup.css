@@ -1,0 +1,25 @@
+    body {
+        background-image: url("1.jpg");
+        
+        object-fit: cover;
+        opacity: 0.8;
+    }
+
+    *[role="form"] {
+        max-width: 600px;
+        padding: 15px;
+        margin: 0 auto;
+        border-radius: 0.3em;
+        background-color: grey;
+    }
+
+    *[role="form"] h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        color: #000000;
+        margin-top: 0%;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }

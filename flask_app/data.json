@@ -1,0 +1,53 @@
+{"intents": [
+        {"tag": "virus",
+         "patterns": ["What is a coronavirus?", "Can you tell about coronavirus", "Hey what is actually this coronavirus", "I want to know what coronavirus is","brief me about coronavirus"],
+         "responses": ["Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19."],
+         "context_set": ""
+        },
+        {"tag": "COVID",
+         "patterns": ["What is a COVID-19", "Can you tell about COVID-19", "Hey what is actually this COVID-19", "I want to know what COVID-19 is","brief me about COVID-19"],
+         "responses": ["COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019. COVID-19 is now a pandemic affecting many countries globally."],
+         "context_set": ""
+        },
+        {"tag": "symptoms",
+         "patterns": ["What are the symptoms of COVID-19", "Can you tell about the symptoms of COVID-19", "Hey what is actually the symptoms of this coronavirus", "I want to know the symptoms of Coronavirus","brief me about the symptoms of COVID-19"],
+         "responses": ["The most common symptoms of COVID-19 are fever, dry cough, and tiredness. Other symptoms that are less common and may affect some patients include aches and pains, nasal congestion, headache, conjunctivitis, sore throat, diarrhea, loss of taste or smell or a rash on skin or discoloration of fingers or toes. These symptoms are usually mild and begin gradually. Some people become infected but only have very mild symptoms.Most people (about 80%) recover from the disease without needing hospital treatment. Around 1 out of every 5 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people, and those with underlying medical problems like high blood pressure, heart and lung problems, diabetes, or cancer, are at higher risk of developing serious illness.  However, anyone can catch COVID-19 and become seriously ill.  People of all ages who experience fever and/or  cough associated withdifficulty breathing/shortness of breath, chest pain/pressure, or loss of speech or movement should seek medical attention immediately. If possible, it is recommended to call the health care provider or facility first, so the patient can be directed to the right clinic."],
+         "context_set": ""
+        },
+        {"tag": "spread",
+         "patterns": ["How does COVID-19 spread?", "Is the spread of the coronavirus huge", "What about the spread of COVID-19", "Is the spread of the virus huge","Tell me how faster this coronavirus is spreading","Is coronavirus spreading faster","I want to know if the virus is spread very fast"],
+         "responses": ["People can catch COVID-19 from others who have the virus. The disease spreads primarily from person to person through small droplets from the nose or mouth, which are expelled when a person with COVID-19 coughs, sneezes, or speaks. These droplets are relatively heavy, do not travel far and quickly sink to the ground. People can catch COVID-19 if they breathe in these droplets from a person infected with the virus.  This is why it is important to stay at least 1 meter) away from others. These droplets can land on objects and surfaces around the person such as tables, doorknobs and handrails.  People can become infected by touching these objects or surfaces, then touching their eyes, nose or mouth.  This is why it is important to wash your hands regularly with soap and water or clean with alcohol-based hand rub. WHO is assessing ongoing research on the ways that COVID-19 is spread and will continue to share updated findings.    "],
+         "context_set": ""
+        },
+        {"tag": "nospread",
+         "patterns": ["Can COVID-19 be caught from a person who has no symptoms?", "Will I get affected from a person who shows no symptoms","Is there a chance where I can be affected by coronavirus from somone who has no symptoms","If a person has no symptoms does that mean that he has no COVID-19"],
+         "responses": ["COVID-19 is mainly spread through respiratory droplets expelled by someone who is coughing or has other symptoms such as fever or tiredness. Many people with COVID-19 experience only mild symptoms. This is particularly true in the early stages of the disease. It is possible to catch COVID-19 from someone who has just a mild cough and does not feel ill. Some reports have indicated that people with no symptoms can transmit the virus. It is not yet known how often it happens. WHO is assessing ongoing research on the topic and will continue to share updated findings."],
+         "context_set": ""
+        },
+        {"tag": "protection",
+         "patterns": ["How shall I protect myself from this virus", "How to safegaurd myself from this Coronavirus ", "Can i protect myself from this COVID-19", "How can we protect others and ourselves if we don't know who is infected?","what are the ways to protect myself from this virus","What should I do in order to protect myself from this Coronavirus"],
+         "responses": ["Practicing hand and respiratory hygiene is important at ALL times and is the best way to protect others and yourself.When possible maintain at least a 1 meter distance between yourself and others. This is especially important if you are standing by someone who is coughing or sneezing.  Since some infected persons may not yet be exhibiting symptoms or their symptoms may be mild, maintaining a physical distance with everyone is a good idea if you are in an area where COVID-19 is circulating."],
+         "context_set": ""
+        },
+        {"tag": "isloate",
+         "patterns": ["What does it mean to self isolate?", "How can I self isolate myself", "What are the ways to self isolate", "How to maintain self quarantine","Is there any ways to self isolate"],
+         "responses": ["Self-isolation is when a person who is experiencing fever, cough or other COVID-19 symptoms stays at home and does not go to work, school or public places. This can be voluntarily or based on his/her health care provider’s recommendation. However, if you live in an area with malaria or dengue fever it is important that you do not ignore symptoms of fever. Seek medical help. When you attend the health facility wear a mask if possible, keep at least 1 metre distant from other people and do not touch surfaces with your hands. If it is a child who is sick help the child stick to this advice.", " If a person is in self-isolation, it is because he/she is ill but not severely ill (requiring medical attention).1st have a large, well-ventilated with hand-hygiene and toilet facilities.If this is not possible, place beds at least 1 metre apart.Keep at least 1 metre from others, even from your family members.Monitor your symptoms daily.Isolate for 14 days, even if you feel healthy.If you develop difficulty breathing, contact your healthcare provider immediately – call them first if possible.Stay positive and energized by keeping in touch with loved ones by phone or online, and by exercising yourself at home."],
+         "context_set": ""
+        },
+        {"tag": "children",
+         "patterns": ["Can children or adolescents catch COVID-19", "Will this affect even kids", "I want to know if this affects kids", "Are children prone to this Coronavirus","Will this COVID-19 affect children","Does this afect kids?","Ae kids and children affectd in large number"],
+         "responses": ["Research indicates that children and adolescents are just as likely to become infected as any other age group and can spread the disease.Evidence to date suggests that children and young adults are less likely to get severe disease, but severe cases can still happen in these age groups.Children and adults should follow the same guidance on self-quarantine and self-isolation if there is a risk they have been exposed or are showing symptoms. It is particularly important that children avoid contact with older people and others who are at risk of more severe disease."],
+         "context_set": ""
+        },
+        {"tag": "vaccine",
+         "patterns": ["Is there a vaccine, drug or treatment for COVID-19", "What about any vaccines", "When can we expect vaccine for this coronavirus", "Is there any drug for this virus","What is the current treatment for COVID-19","is there any treatment or vaccines for this virus"],
+         "responses": ["While some western, traditional or home remedies may provide comfort and alleviate symptoms of mild COVID-19, there are no medicines that have been shown to prevent or cure the disease. WHO does not recommend self-medication with any medicines, including antibiotics, as a prevention or cure for COVID-19. However, there are several ongoing clinical trials of both western and traditional medicines. WHO is coordinating efforts to develop vaccines and medicines to prevent and treat COVID-19 and will continue to provide updated information as soon research results become available."],
+         "context_set": ""
+        },
+        {"tag": "grocery",
+         "patterns": ["How to grocery shop safely", "How to go to shops safely?", "can we go to shops safely","How well can we go to shops","is it safe to go to shops","is grocery shop fine to go"],
+         "responses": ["When grocery shopping, keep at least 1-metre distance from others and avoid touching your eyes, mouth and nose. If possible, sanitize the handles of shopping trolleys or baskets before shopping. Once home, wash your hands thoroughly and also after handling and storing your purchased products.There is currently no confirmed case of COVID-19 transmitted through food or food packaging."],
+         "context_set": ""
+        }
+   ]
+}

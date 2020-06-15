@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="topnav">
+  <a class="active" href="{{url_for('home')}}">Home</a>
+
+</div>
+
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="_blank">
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <style>
+    a {
+        color: #337ab7;
+    }
+
+    p {
+        margin-top: 1rem;
+        text-decoration-color: blanchedalmond;
+    }
+
+    a:hover {
+        color: #23527c;
+    }
+
+    a:visited {
+        color: #8d75a3;
+    }
+
+    body {
+
+        background-size: 1550px;
+        line-height: 1.5;
+        font-family: sans-serif;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        color: black;
+        margin: 2em;
+        background-image:url({{url_for('static', filename='pat.jpg')}});
+    }
+
+    h1 {
+    color: #003366;
+
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    b {
+        font-size: larger;
+        color: red;
+        text-align: center;
+    }
+
+    h2 {
+        font-weight: bold;
+        color: #005A9C;
+        font-size: 140%;
+        text-transform: uppercase;
+    }
+
+    red {
+        color: red;
+    }
+
+    #controls {
+        display: flex;
+        margin-top: 2rem;
+        max-width: 28em;
+    }
+
+    button {
+        flex-grow: 1;
+        height: 3.5rem;
+        min-width: 2rem;
+        border: none;
+        border-radius: 0.15rem;
+        background: #ed341d;
+        margin-left: 2px;
+        box-shadow: inset 0 -0.15rem 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    button:hover,
+    button:focus {
+        outline: none;
+        background: #c72d1c;
+    }
+
+    button::-moz-focus-inner {
+        border: 0;
+    }
+
+    button:active {
+        box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.2);
+        line-height: 3rem;
+    }
+
+    button:disabled {
+        pointer-events: none;
+        background: lightgray;
+    }
+
+    button:first-child {
+        margin-left: 0;
+    }
+
+    audio {
+        display: block;
+        width: 100%;
+        margin-top: 0.2rem;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 1rem;
+    }
+
+    #formats {
+        margin-top: 0.5rem;
+        font-size: 80%;
+    }
+
+    #recordingsList {
+        max-width: 28em;
+    }
+
+    h3 {
+        border-top: 1px solid #eee;
+        color: #666;
+        font-size: 0.9em;
+        font-weight: 500;
+        margin: 20px 0 10px 0;
+        padding: 10px 0 0 0;
+        white-space: nowrap;
+        text-decoration-color: thistle;
+    }
+
+    p#data {
+        border-top: 1px dotted #666;
+        font-family: Courier New, monospace;
+        line-height: 1.3em;
+        min-height: 6em;
+        max-height: 1000px;
+        overflow-y: auto;
+        padding: 1em 0 0 0;
+    }
+
+    video {
+        background: #222;
+        margin: 10px auto;
+        width: 800px;
+        height: 400px;
+    }
+
+    #controls {
+        display: flex;
+        margin-top: 2rem;
+        max-width: 28em;
+    }
+
+    button {
+        flex-grow: 1;
+        height: 3.5rem;
+        min-width: 2rem;
+        border: none;
+        border-radius: 0.15rem;
+        background: #ed341d;
+        margin-left: 2px;
+        box-shadow: inset 0 -0.15rem 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    button:hover,
+    button:focus {
+        outline: none;
+        background: #c72d1c;
+    }
+
+    button::-moz-focus-inner {
+        border: 0;
+    }
+
+    button:active {
+        box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.2);
+        line-height: 3rem;
+    }
+
+    button:disabled {
+        pointer-events: none;
+        background: lightgray;
+    }
+
+    button:first-child {
+        margin-left: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Respiratory Test</h1>
+        <video controls autoplay></video><br>
+        <div id="controls">
+            <button id="rec" onclick="onBtnRecordClicked()">Record</button>
+            <button id="pauseRes" onclick="onPauseResumeClicked()" disabled>Pause</button>
+            <button id="stop" onclick="onBtnStopClicked()" disabled>Stop</button>
+            <button id="stateButton" onclick="onStateClicked()"><a  href="{{url_for('cof')}}">Trace state</a></button>
+            <button ><a  href="{{url_for('test')}}">next</a></button>
+
+        </div>
+
+        <a id="downloadLink" download="mediarecorder.webm" name="mediarecorder.webm" href="{{url_for('cof')}}"></a>
+
+
+        <script src="https://webrtchacks.github.io/adapter/adapter-latest.js"></script>
+        <script src="{{url_for('static',filename='main.js')}}"></script>
+
+        </div>
+    </center>
+</body>
+
+</html>

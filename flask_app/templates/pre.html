@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div class="topnav">
+      <a class="active" href="{{url_for('home')}}">Home</a>
+      <link rel="stylesheet" type='text/css' href="{{url_for('static',filename='login.css')}}">
+
+
+    </div>
+    <style>
+    .center-div {
+        margin: 0 auto;
+        max-width: 800px;
+        height: 500px;
+        border-radius: 3px;
+    }
+
+    body {
+        text-decoration: none;
+
+        background-color:  #001a33;
+    }
+
+    p {
+        text-align: left;
+        text-indent: 40px;
+        font-size: 130%;
+        background-color:  #001a33;
+color:white;
+font-size: 20px;
+        background-color: #001a33;
+    }
+
+    form {
+        text-align: left;
+        align-self: start;
+        background-color:  #001a33;
+
+    }
+
+
+    /* Split the screen in half */
+
+    .split {
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        background-color:  #001a33;
+
+        overflow-x: hidden;
+        padding-top: 10px;
+        text-decoration-color: none;
+    }
+
+
+    /* Control the left side */
+
+    .left {
+        left: 0;
+        text-decoration-color: none;
+        background-size: 1100px;
+        background-color:  #001a33;
+
+        margin-top: 47px;
+        width: 44%;
+    }
+
+    h1 {
+      background-color:  #001a33;
+      color:white;
+      font-size: 40px;
+        text-align: center;
+    }
+
+
+    /* Control the right side */
+
+    .right {
+        right: 0;
+        background-size: 1800px;
+        margin-top: 47px;
+        background-color:  #001a33;
+
+        width: 56%;
+        text-align: center;
+    }
+
+    .button5 {
+        background-color: white;
+        color: black;
+        background-color:  #001a33;
+
+        border: 2px solid  #001a33;
+    }
+
+    .button5:hover {
+        background-color:  #001a33;
+        background-color:  #001a33;
+
+        color: white;
+    }
+
+
+    /* If you want the content centered horizontally and vertically */
+
+    .centered {
+        position: absolute;
+        background-color:  #001a33;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+
+    /* Style the image inside the centered container, if needed */
+
+    .centered img {
+        width: 150px;
+        border-radius: 50%;
+        background-color:  #001a33;
+
+    }
+
+
+    </style>
+</head>
+
+
+
+<div class="split left">
+    <br></br>
+    <br></br>
+    <br></br>
+    <center>
+        <h1> Patient's Result</h1>
+    </center>
+    <div class="left">
+
+
+        <strong><p>NAME: {{data[1]}}</p></strong>
+        <strong><p>COUGH RATE: {{data[3]}}</p></strong>
+        <strong><p>RESPIRATORY-RATE: {{data[5]}}</p></strong>
+        <strong><p>BPM: {{data[4]}}</p></strong>
+        <strong><p>RISK FACTOR: {{data[6]}}</p></strong>
+
+    </div>
+</div>
+
+
+ <form method="post" action="/mail">
+<div class="split right"><br></br>
+    <center>
+        <h1>Prescription</h1>
+    </center>
+    <div class="center">
+
+        <textarea id="text" name="text" rows="30" cols="80">
+         </textarea>
+        <br><br>
+
+  <button type="submit" name="Respond" placeholder="Respond" value="{{data[0]}}">Respond</button>
+
+
+    </div>
+</div>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="topnav">
+  <a class="active" href="{{url_for('home')}}">Home</a>
+
+  <a href="{{url_for('chat')}}">Chat ♥!</a>
+
+</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chatbot</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type='text/css' href="{{url_for('static',filename='covid.css')}}">
+</head>
+
+<body>
+
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        </div>
+    </section>
+</body>
+
+<body>
+    <div class="container">
+    </div>
+
+</body>
+
+<head>
+</head>
+<br>
+<br>
+  <form action="{{ url_for('chatbottest') }}" method="post">
+<div class="form__group" >
+  <input type="text"  class="form__input"  id="name"  name="val" placeholder="Type" required="" />
+  <label for="name" class="form__label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typing...</label>
+</div>
+
+
+
+
+
+
+
+        </form>
+
+        <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp  <button style="background-color: #4CAF50; border: none;color: white;  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;"><a href="{{url_for('chat')}}">Back to Chat</a></button>
+
+<br>
+<p>
+    <div class="login-box">
+    <div class="color">
+
+
+
+
+                      The most common symptoms of COVID-19 are fever, dry cough, and tiredness. Other symptoms that are less common and may affect some patients include aches and pains, nasal congestion, headache, conjunctivitis, sore throat, diarrhea, loss of taste or smell or a rash on skin or discoloration of fingers or toes. These symptoms are usually mild and begin gradually. Some people become infected but only have very mild symptoms.
+                      <br>
+    Most people (about 80%) recover from the disease without needing hospital treatment. Around 1 out of every 5 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people, and those with underlying medical problems like high blood pressure, heart and lung problems, diabetes, or cancer, are at higher risk of developing serious illness.  However, anyone can catch COVID-19 and become seriously ill.  People of all ages who experience fever and/or  cough associated with difficulty breathing/shortness of breath, chest pain/pressure, or loss of speech or movement should seek medical attention immediately. If possible, it is recommended to call the health care provider or facility first, so the patient can be directed to the right clinic.
+                     </p>
+
+</div>
+</div>
+
+
+</html>

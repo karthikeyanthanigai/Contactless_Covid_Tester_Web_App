@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="topnav">
+    <a class="active" href="{{url_for('home')}}">Home</a>
+
+
+    <li style="float:right" ><a href="{{url_for('blogin')}}">Login</a></li>
+    <li style="float:right"><a href="{{url_for('bsign')}}">Sign Up</a>
+
+</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contactless tester!! </title>
+
+</head>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+
+<head>
+
+    <link href="{{url_for('static',filename='doctorsignup.css')}}" rel="stylesheet" type="text/css">
+
+</head>
+
+<head>
+    <script src="{{url_for('static',filename='doctorsignup.js')}}"></script>
+</head>
+<body>
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+
+    </section>
+</body>
+<body>
+    <div class="container">
+
+        <form class="form-horizontal" role="form" action="{{ url_for('goodd') }}" method="post">
+            <h2>DOCTOR SIGNUP</h2>
+            <div class="form-group">
+                <label for="firstName" class="col-sm-3 control-label">First Name</label>
+                <div class="col-sm-9">
+                    <input type="text" name="firstName" placeholder="First Name" class="form-control" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastName" class="col-sm-3 control-label">Last Name</label>
+                <div class="col-sm-9">
+                    <input type="text" name="lastName" placeholder="Last Name" class="form-control" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-sm-3 control-label">Email* </label>
+                <div class="col-sm-9">
+                    <input type="email" name="email" placeholder="Email" class="form-control" name="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-3 control-label">Password*</label>
+                <div class="col-sm-9">
+                    <input type="password" name="password" placeholder="Password" class="form-control">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="phoneNumber" class="col-sm-3 control-label">Phone number
+
+                </label>
+                <div class="col-sm-9">
+                    <input type="phoneNumber" name="phoneNumber" placeholder="Phone number" class="form-control">
+                    <span class="help-block">Your phone number won't be disclosed anywhere </span>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <div class="col-sm-9 col-sm-offset-3">
+                    <span class="help-block">*Required fields</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <button>REGISTER</button>
+
+            </div>
+
+        </form>
+        <!-- /form -->
+  ]
+    </div>
+    <!-- ./container -->
+
+</body>
+
+</html>

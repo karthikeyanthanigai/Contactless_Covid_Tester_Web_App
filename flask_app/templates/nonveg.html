@@ -1,0 +1,193 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type='text/css' href="{{url_for('static',filename='nonveg.css')}}">
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<html lang="en">
+<div class="topnav">
+  <a class="active" href="{{url_for('home')}}">Home</a>
+
+  <a href="{{url_for('chat')}}">Chat ♥!</a>
+
+</div>
+
+<head>
+  <link rel="stylesheet" type='text/css' href="{{url_for('static',filename='type1.css')}}">
+  <link rel="stylesheet" type='text/css' href="{{url_for('static',filename='nonveg.css')}}">
+
+</head>
+<form  method="POST" action="{{ url_for('nvtest') }}">
+    <div class="login-box">
+    <h1>Questions:</h1>
+    <!-- One "tab" for each step in the form: -->
+
+    <div ><h3>How many eggs do you take ia a day?</h3>
+        <p>
+          <select name="ten">
+            {% for o in data %}
+          <option value="{{ o.val }}">{{ o.val }}</option>
+          {% endfor %}
+
+            </select>
+        </p>
+
+    </div>
+    <br>
+    <div ><h3>How often in a week you will take sea food?</h3>
+        <p>
+          <select name="ele">
+            {% for o in data %}
+          <option value="{{ o.val }}">{{ o.val }}</option>
+          {% endfor %}
+
+            </select>
+        </p>
+
+    </div>
+    <br>
+    <div ><h3>How many times per week you take in red meat like pork/beef/mutton etc..?</h3>
+        <p>
+          <select name="twl">
+            {% for o in data %}
+          <option value="{{ o.val }}">{{ o.val }}</option>
+          {% endfor %}
+
+            </select>
+        </p>
+
+    </div>
+    <br>
+    <div ><h3>How many times per week you take in white meat like chicken/duck etc..?</h3>
+        <p>
+          <select name="the">
+            {% for o in data %}
+          <option value="{{ o.val }}">{{ o.val }}</option>
+          {% endfor %}
+
+            </select>
+        </p>
+
+    </div>
+    <br>
+    <div ><h3>How many litres of water do you drink per day?</h3>
+        <p>
+          <select name="one">
+            {% for o in data %}
+          <option value="{{ o.val }}">{{ o.val }}</option>
+          {% endfor %}
+
+            </select>
+        </p>
+
+    </div>
+<br>
+    <div ><h3>How many sweets or choclates you eat per day?</h3>
+        <p>
+          <select name="two">
+            {% for o in data %}
+          <option value="{{ o.val }}">{{ o.val }}</option>
+          {% endfor %}
+
+            </select>
+        </p>
+
+    </div>
+<br>
+    <div ><h3>How often you take ginger, garlic or turmeric?</h3>
+        <p>
+          <select name="three">
+            {% for o in data %}
+          <option value="{{ o.val }}">{{ o.val }}</option>
+          {% endfor %}
+
+            </select>
+        </p>
+
+    </div>
+    <br>
+    <div ><h3>What is your intake rate of whole grains like wheat/rice per day?</h3>
+        <p>
+          <select name="four">
+            {% for o in data %}
+          <option value="{{ o.val }}">{{ o.val }}</option>
+          {% endfor %}
+
+            </select>
+        </p>
+
+    </div>
+    <br>
+    <div ><h3>How often you take leafy greens in a week?</h3>
+        <p>
+          <select name="five">
+            {% for o in data %}
+          <option value="{{ o.val }}">{{ o.val }}</option>
+          {% endfor %}
+
+            </select>
+        </p>
+
+    </div>
+    <br>
+    <div ><h3>How many times you take peanuts/cashews/almonds in a week?</h3>
+        <p>
+          <select name="six">
+            {% for o in data %}
+          <option value="{{ o.val }}">{{ o.val }}</option>
+          {% endfor %}
+
+            </select>
+        </p>
+
+    </div>
+    <br>
+    <div ><h3>Do you eat rare fruits like figs/avocado/raspberries?If yes how many times per week?</h3>
+        <p>
+          <select name="seven">
+            {% for o in data %}
+          <option value="{{ o.val }}">{{ o.val }}</option>
+          {% endfor %}
+
+            </select>
+        </p>
+
+    </div>
+    <br>
+    <div ><h3>How often you take water rich fruits like cucumber/watermelon?</h3>
+        <p>
+          <select name="eight">
+            {% for o in data %}
+          <option value="{{ o.val }}">{{ o.val }}</option>
+          {% endfor %}
+
+            </select>
+        </p>
+
+    </div>
+    <br>
+    <div ><h3>How often you take dairy products like cheese,butter and milk per day?</h3>
+        <p>
+          <select name="nine">
+            {% for o in data %}
+          <option value="{{ o.val }}">{{ o.val }}</option>
+          {% endfor %}
+
+            </select>
+            </p>
+
+    </div>
+    <br>
+        <button type="submit">Result</button>
+
+</div>
+
+</form>
+
+
+</html>
+
+</html>

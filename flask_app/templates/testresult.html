@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="topnav">
+    <a class="active"href="{{url_for('home')}}">Home</a>
+
+</div>
+<style>
+.center-div {
+    margin: 0 auto;
+    max-width: 800px;
+    height: 500px;
+    border-radius: 3px;
+}
+
+body {
+    text-decoration: none;
+align-items: center;
+font-display: centered;
+background-image:url({{url_for('static', filename='bg1.jpg')}});
+
+;}
+
+p {
+    text-align: center;
+    text-indent: 40px;
+    font-size: 130%;
+
+
+
+;
+  color:white;
+font-size: 20px;
+
+}
+
+form {
+    text-align: left;
+    align-self: start;
+
+
+
+;
+}
+
+
+/* Split the screen in half */
+
+.split {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+
+
+
+;
+    overflow-x: hidden;
+    padding-top: 10px;
+    text-decoration-color: none;
+}
+
+
+/* Control the left side */
+
+.left {
+    left: 0;
+    text-decoration-color: none;
+    background-size: 1100px;
+
+
+
+;
+    margin-top: 47px;
+    width: 44%;
+}
+
+h1 {
+
+
+;  color:white;
+  font-size: 40px;
+    text-align: center;
+}
+
+
+/* Control the right side */
+
+.right {
+    right: 0;
+    background-size: 1800px;
+    margin-top: 47px;
+
+
+
+;
+    width: 56%;
+    text-align: center;
+}
+
+.button5{
+    background-color: white;
+    color: black;
+
+
+
+;
+
+;
+}
+
+.button:hover {
+
+
+
+;
+
+
+;
+    color: white;
+}
+
+
+/* If you want the content centered horizontally and vertically */
+
+.centered {
+    position: absolute;
+
+
+
+;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* Style the image inside the centered container, if needed */
+
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+
+
+
+;
+}
+
+
+</style>
+<head>
+    <br></br>
+    <br></br>
+    <div class="center-div">
+
+        <body>
+            <br>
+            <h1 contentEditable="true">Your Result</h1>
+
+            <strong><p>Name: {{ name}}</p></strong>
+            <strong><p>COUGH RATE:  {{ cou }}</p></strong>
+            <strong><p>RESPIRATORY RATE:  {{ res }}</p></strong>
+            <strong><p>BPM:  {{ bp }}</p></strong>
+            <strong><p>RISK FACTOR:  {{ risk }}</p></strong>
+            <div style="text-align:center">
+              <br>
+                <button class="button button5" style="background-color: #4CAF50; border: none;color: white;  padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;" ><a href="{{url_for('main')}}">Click here to exit</a></button>
+        </body>
+        </div>
+        </body>
+    </div>
+
+</head>
+
+</html>

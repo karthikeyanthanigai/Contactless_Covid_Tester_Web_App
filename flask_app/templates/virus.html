@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="topnav">
+  <a class="active" href="{{url_for('home')}}">Home</a>
+
+  <a href="{{url_for('chat')}}">Chat ♥!</a>
+
+</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chatbot</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type='text/css' href="{{url_for('static',filename='covid.css')}}">
+</head>
+
+<body>
+
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        </div>
+    </section>
+</body>
+
+<body>
+    <div class="container">
+    </div>
+
+</body>
+
+<head>
+</head>
+<br>
+<br>
+  <form action="{{ url_for('chatbottest') }}" method="post">
+<div class="form__group" >
+  <input type="text"  class="form__input"  id="name"  name="val" placeholder="Type" required="" />
+  <label for="name" class="form__label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typing...</label>
+</div>
+
+
+
+
+
+
+
+        </form>
+
+        <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp  <button style="background-color: #4CAF50; border: none;color: white;  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;"><a href="{{url_for('chat')}}">Back to Chat</a></button>
+
+<br>
+<p>
+    <div class="login-box">
+    <div class="color">
+
+
+    Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.
+
+     </p>
+
+
+</div>
+</div>
+
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="topnav">
+  <a class="active" href="{{url_for('home')}}">Home</a>
+
+  <a href="{{url_for('chat')}}">Chat ♥!</a>
+
+</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chatbot</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type='text/css' href="{{url_for('static',filename='covid.css')}}">
+</head>
+
+<body>
+
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        </div>
+    </section>
+</body>
+
+<body>
+    <div class="container">
+    </div>
+
+</body>
+
+<head>
+</head>
+<br>
+<br>
+  <form action="{{ url_for('chatbottest') }}" method="post">
+<div class="form__group" >
+  <input type="text"  class="form__input"  id="name"  name="val" placeholder="Type" required="" />
+  <label for="name" class="form__label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typing...</label>
+</div>
+
+
+
+
+
+
+
+        </form>
+
+        <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp  <button style="background-color: #4CAF50; border: none;color: white;  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;"><a href="{{url_for('chat')}}">Back to Chat</a></button>
+
+<br>
+<p>
+    <div class="login-box">
+    <div class="color">
+
+
+    While some western, traditional or home remedies may provide comfort and alleviate symptoms of mild COVID-19, there are no medicines that have been shown to prevent or cure the disease. WHO does not recommend self-medication with any medicines, including antibiotics, as a prevention or cure for COVID-19. However, there are several ongoing clinical trials of both western and traditional medicines. WHO is coordinating efforts to develop vaccines and medicines to prevent and treat COVID-19 and will continue to provide updated information as soon research results become available.
+<br>
+The most effective ways to protect yourself and others against COVID-19 are to:
+<br>
+Clean your hands frequently and thoroughly
+<br>
+Avoid touching your eyes, mouth and nose
+<br>
+Cover your cough with the bend of elbow or tissue. If a tissue is used, discard it immediately and wash your hands.
+<br>
+Maintain a distance of at least 1 metre from others.
+   </p>
+
+
+</div>
+</div>
+
+
+</html>

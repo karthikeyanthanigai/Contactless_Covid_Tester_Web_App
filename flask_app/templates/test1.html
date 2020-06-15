@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="topnav">
+    <a class="active" href="{{url_for('home')}}">Home</a>
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='testques.css')}}">
+
+
+    <style>
+    a {
+        color: #337ab7;
+    }
+
+    p {
+        margin-top: 1rem;
+        text-decoration-color: blanchedalmond;
+    }
+
+    a:hover {
+        color: #23527c;
+    }
+
+    a:visited {
+        color: #8d75a3;
+    }
+
+    body {
+
+        background-size: 1550px;
+        line-height: 1.5;
+        font-family: sans-serif;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        color: black;
+        margin: 2em;
+        background-image:url({{url_for('static', filename='pat.jpg')}});
+    }
+
+    h1 {
+    color: #000033;
+
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    b {
+        font-size: larger;
+
+        text-align: center;
+    }
+
+    h2 {
+        font-weight: bold;
+        color:#000033;
+        font-size: 140%;
+        text-transform: uppercase;
+    }
+
+
+    #controls {
+        display: flex;
+        margin-top: 2rem;
+        max-width: 28em;
+    }
+
+    button {
+        flex-grow: 1;
+        height: 3.5rem;
+        min-width: 2rem;
+        border: none;
+        border-radius: 0.15rem;
+        background: #ed341d;
+        margin-left: 2px;
+        box-shadow: inset 0 -0.15rem 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    button:hover,
+    button:focus {
+        outline: none;
+        background: #c72d1c;
+    }
+
+    button::-moz-focus-inner {
+        border: 0;
+    }
+
+    button:active {
+        box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.2);
+        line-height: 3rem;
+    }
+
+    button:disabled {
+        pointer-events: none;
+        background: lightgray;
+    }
+
+    button:first-child {
+        margin-left: 0;
+    }
+
+    audio {
+        display: block;
+        width: 100%;
+        margin-top: 0.2rem;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 1rem;
+    }
+
+    #formats {
+        margin-top: 0.5rem;
+        font-size: 80%;
+    }
+
+    #recordingsList {
+        max-width: 28em;
+    }
+
+    </style>
+</div>
+<body>
+
+    <section class="wrapper">
+        <div id="stars"></div>
+
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+
+    </section>
+
+</body>
+<form role="form" action="{{ url_for('restest') }}" method="post">
+    <div class="container">
+        <h1>QUESTIONS</h1>
+
+        <hr>
+
+        <h2><label for="text"><b>1. Select your gender </b></label></h2>
+
+            <b> <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </b>
+
+        <h2><label for="text"><b>2. Enter your age </b></label></h2>
+        <input type="text" placeholder="Enter here" name="age" id="age" required>
+
+
+        <h2><label for="text"><b>3. What is your current location? </b></label></h2>
+        <input type="text" placeholder="Enter location" name="location" id="location" required>
+
+        <h2><label for="text"><b>4. Are you a diabetic person? </b></label></h2>
+        <b> <input type="radio" id="yes" name="dia" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="dia" value="no">
+        <label for="no">No</label><br>
+        </b>
+
+        <h2><label for="text"><b>5. Do you get any frequent headaches? </b></label></h2>
+        <b> <input type="radio" id="yes1" name="head" value="yes">
+        <label for="yes1">Yes</label><br>
+        <input type="radio" id="no1" name="head" value="no">
+        <label for="no1">No</label><br>
+        </b>
+
+        <h2><label for="text"><b>6. Are you able to smell odour ? </b></label></h2>
+        <b> <input type="radio" id="yes2" name="odour" value="yes">
+        <label for="yes2">Yes</label><br>
+        <input type="radio" id="no2" name="odour" value="no">
+        <label for="no2">No</label><br>
+        </b>
+
+
+        <h2><label for="text"><b>7. Do you have any of the following symptoms: Sorethroat,diarrhea or nasal congestion? </b></label></h2>
+        <b> <input type="radio" id="yes3" name="sym" value="yes">
+        <label for="yes3">Yes</label><br>
+        <input type="radio" id="no3" name="sym" value="no">
+        <label for="no3">No</label><br>
+        </b>
+
+        <h2><label for="text"><b>8.Do you suffer from moderate to high fever for couple of days/weeks? </b></label></h2>
+        <b> <input type="radio" id="yes4" name="fever" value="yes">
+        <label for="yes4">Yes</label><br>
+        <input type="radio" id="no4" name="fever" value="no">
+        <label for="no4">No</label><br>
+        </b>
+
+        <h2><label for="text"><b>9.Do you suffer from asthma/lung/heart disease? </b></label></h2>
+        <b> <input type="radio" id="yes5" name="dis" value="yes">
+        <label for="yes5">Yes</label><br>
+        <input type="radio" id="no5" name="dis" value="no">
+        <label for="no5">No</label><br>
+        </b>
+
+        <h2><label for="text"><b>10.do you have bp? </b></label></h2>
+        <b> <input type="radio" id="yes6" name="bp" value="yes">
+        <label for="yes6">Yes</label><br>
+        <input type="radio" id="no6" name="bp" value="no">
+        <label for="no6">No</label><br>
+        </b>
+
+        <h2><label for="text"><b>11.have you traveled any where in the past 30 days? </b></label></h2>
+        <b> <input type="radio" id="yes7" name="trv" value="yes">
+        <label for="yes7">Yes</label><br>
+        <input type="radio" id="no7" name="trv" value="no">
+        <label for="no7">No</label><br>
+        </b>
+
+
+        <button type="submit" class="registerbtn" >Submit</button>
+    </div>
+
+</form>
+
+</html>

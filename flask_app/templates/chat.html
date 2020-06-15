@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="topnav">
+  <a class="active" href="{{url_for('main')}}">Home</a>
+
+  <a href="{{url_for('chat')}}">Chat ♥!</a>
+
+
+
+</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHAT</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type='text/css' href="{{url_for('static',filename='login.css')}}">
+</head>
+
+<body>
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        </div>
+    </section>
+</body>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<style>
+body {
+    font-family: Arial;
+    color: black;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    top: 50;
+    bottom: 0;
+
+  background-image: url("doc.jpg");
+    background-size: 1000px;
+}
+
+.right {
+    right: 0;
+    top: 50;
+    bottom: 0;
+    background-image: url("patient.jpg");
+    background-size: 880px;
+    opacity: 1;
+}
+
+.centered {
+    position: absolute;
+    top: 55%;
+    left: 56.5%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 30px;
+    color:white;
+    opacity: 1;
+
+}
+p{
+  font-size:20px;
+}
+
+.centered img {
+widht:550px;
+border-style: solid;
+  border-width: 15px;
+  border-color: white;
+height:300px;
+
+    opacity: 1;
+}
+</style>
+<body>
+  <div class="split left">
+      <div class="centered">
+          <a href="{{url_for('chatbot')}}"><img src="{{url_for('static', filename='ques1.jpg')}}"></a>
+          <h2>QUERY</h2>
+          <p>To get answers to your queries about corona.</p>
+          <button  style="background-color: #4CAF50; border: none;color: white;  padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;"onclick="window.location.href = '{{url_for('chatbot')}}';">Click Here!</button>
+      </div>
+  </div>
+
+  <div class="split right">
+      <div class="centered">
+          <a href="{{url_for('bdiet')}}"> <img src="{{url_for('static', filename='diet.jpg')}}"></a>
+          <h2>DIET</h2>
+          <p>To get a perfect diet recommendation for you.</p>
+          <button  style="background-color: #4CAF50; border: none;color: white;  padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;"onclick="window.location.href = '{{url_for('bdiet')}}';">Click Here!</button>
+      </div>
+  </div>
+</body>
+
+</html>
