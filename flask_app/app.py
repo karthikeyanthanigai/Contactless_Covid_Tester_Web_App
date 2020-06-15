@@ -346,8 +346,8 @@ def mail():
     # save the pdf with name .pdf
     pdf.output("VirtTest_Prescription.pdf")
 
-    fromaddr = "iamtonystark4.0@gmail.com"
-    toaddr = "dlmlmaster32@gmail.com"
+    fromaddr = "doctor@gmail.com"
+    toaddr = "patient@gmail.com"
 
     # instance of MIMEMultipart
     msg = MIMEMultipart()
@@ -392,7 +392,7 @@ def mail():
     s.starttls()
 
     # Authentication
-    s.login(fromaddr, "marana33")
+    s.login(fromaddr, "Password_of_Sender")
 
     # Converts the Multipart msg into a string
     text = msg.as_string()
