@@ -64,7 +64,7 @@ Its an RNN based chatbot. People can ask any kind of queries regarding COVID. Al
 * librosa
 * pandas
 
-### how to run the app:
+### How to run the app:
 1. first connect with your phpmyadmin and create a database name covid and create 3 table(doctor,patient,record) with (first_name,last_name,email,password,mobile) , (first_name,last_name,email,password) , (id,name,email,cough,bpm,resp,risk) as columns.
 
 2.Clone this repository .
