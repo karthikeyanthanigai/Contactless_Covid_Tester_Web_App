@@ -80,6 +80,6 @@ cd Contactless_Covid_Tester_Web_App/flask_app
 python app.py
 ```
 
-if you got any error in install the packages then refer [Stackoverflow](https://www.stackoverflow.com).
+If you got any error in installing the packages then feel free to refer [Stackoverflow](https://www.stackoverflow.com).
 
 
